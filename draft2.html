@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Sticky Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e91e63 !important;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            padding: 100px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🔥 Sticky Navigation Bar (Above All Sections) -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 🔥 Home Section (Optional) -->
+<section id="home" class="bg-light text-center">
+    <h2>Home</h2>
+    <p>Welcome to my portfolio!</p>
+</section>
+
+<!-- 🔥 About Section (Below Navbar) -->
+<section id="about" class="container text-center py-5">
+    <h2 class="fw-bold">About</h2>
+    <div class="my-4">
+        <img src="images/about.jpg" alt="Profile Picture" class="profile-img">
+    </div>
+    <div class="mx-auto" style="max-width: 700px;">
+        <p>I am a data scientist with a passion for AI, machine learning, and data-driven solutions...</p>
+        <p>My work blends innovation with real-world applications...</p>
+    </div>
+</section>
+
+<!-- 🔥 Projects Section -->
+<section id="projects" class="container text-center py-5">
+    <h2 class="fw-bold">Projects</h2>
+    <!-- Project cards go here -->
+</section>
+
+<!-- 🔥 Skills Section -->
+<section id="skills" class="container text-center py-5">
+    <h2 class="fw-bold">Skills</h2>
+    <!-- Skill icons and descriptions go here -->
+</section>
+
+<!-- 🔥 Contact Section -->
+<section id="contact" class="text-center py-5" style="background-color: #000; color: white;">
+    <h2 class="fw-bold">Contact Me</h2>
+    <!-- Contact details and icons go here -->
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom Styling */
+        #about {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        #about h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        #about .profile-img {
+            width: 250px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 15px; /* Rounded corners */
+            border: 3px solid #333;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+        }
+        #about .about-text {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About</h2>
+    <img src="images/about/1.jpg" alt="Profile Picture" class="profile-img">
+    <p class="about-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet dolor dolor. Suspendisse ligula elit, 
+        hendrerit ut bibendum quis, facilisis vitae est. Vivamus vitae felis sit amet sem rhoncus euismod. 
+        Praesent sem dolor, ullamcorper nec tempor quis, pulvinar sed dolor. Quisque pretium felis ac nisi posuere, 
+        id commodo lorem porttitor. Nam in condimentum ex. Nam accumsan nisl turpis, sed tempus dolor volutpat non. 
+        Proin id enim feugiat ipsum consectetur mattis. Nam blandit venenatis nisi, convallis imperdiet nisi condimentum at.
+    </p>
+    <p class="about-text">
+        Duis convallis ligula sed pretium tristique. Duis nunc risus, lacinia eget cursus id, suscipit ac metus. 
+        Sed varius sed tortor congue aliquam. In in dapibus diam, in auctor purus. Praesent vitae tristique diam. 
+        Donec tincidunt hendrerit tortor, vitae lobortis purus rutrum sit amet. Nunc non arcu vitae leo rhoncus 
+        tincidunt vel sed urna. Sed sed efficitur dui. Morbi id velit nisl. Fusce luctus placerat purus eu cursus.
+    </p>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+<!-- Projects Section -->
+<section id="projects" class="container text-center py-5">
+    <h2 class="fw-bold display-4">Projects</h2>
+
+    <div class="row justify-content-center mt-4">
+        <!-- Project 1 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <img src="/Users/navya/Desktop/Data Science Portfolio/Images/Projects/1.png" class="card-img-top rounded-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="fw-bold">Project 1</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. 
+                        Sed et purus ornare, eleifend tellus ut, fermentum arcu.
+                    </p>
+                    <p class="fw-bold"><a href="#">Blog Post</a> | <a href="#">Source Code</a></p>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="container text-center py-5">
+    <h2 class="fw-bold display-4">Skills</h2>
+
+    <div class="row justify-content-center mt-4">
+        <!-- Skill 1 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+                <img src="images/skills/1.png" class="img-fluid" alt="Python">
+                <h5 class="fw-bold mt-3">Python</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat.</p>
+                <p><a href="#" class="fw-bold text-primary">Link to course or bootcamp</a></p>
+            </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+                <img src="images/skills/2.png" class="img-fluid" alt="Data Visualization">
+                <h5 class="fw-bold mt-3">Data Visualization</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat.</p>
+                <p><a href="#" class="fw-bold text-primary">Link to course or bootcamp</a></p>
+            </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+                <img src="images/skills/3.png" class="img-fluid" alt="SQL">
+                <h5 class="fw-bold mt-3">SQL</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat.</p>
+                <p><a href="#" class="fw-bold text-primary">Link to course or bootcamp</a></p>
+            </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+                <img src="images/skills/4.png" class="img-fluid" alt="Data Storytelling">
+                <h5 class="fw-bold mt-3">Data Storytelling</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat.</p>
+                <p><a href="#" class="fw-bold text-primary">Link to course or bootcamp</a></p>
+            </div>
+        </div>
+        <!-- Skill 5 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+                <img src="images/skills/5.png" class="img-fluid" alt="Power Query">
+                <h5 class="fw-bold mt-3">Data Storytelling</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat.</p>
+                <p><a href="#" class="fw-bold text-primary">Link to course or bootcamp</a></p>
+            </div>
+        </div>
+        <!-- Skill 6 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+                <img src="images/skills/6.png" class="img-fluid" alt="Machine Learning">
+                <h5 class="fw-bold mt-3">Data Storytelling</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat.</p>
+                <p><a href="#" class="fw-bold text-primary">Link to course or bootcamp</a></p>
+            </div>
+        </div>
+        <!-- Skill 7 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+                <img src="images/skills/7.png" class="img-fluid" alt="Tableau">
+                <h5 class="fw-bold mt-3">Data Storytelling</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat.</p>
+                <p><a href="#" class="fw-bold text-primary">Link to course or bootcamp</a></p>
+            </div>
+        </div>
+    
+    </div>
+</section>
+<!-- Contact Me Section -->
+<section id="contact" class="text-center py-5" style="background-color: #000; color: white;">
+    <h2 class="fw-bold display-4">Contact Me</h2>
+
+    <!-- Email & Phone -->
+    <div class="d-flex justify-content-center align-items-center mt-3">
+        <div class="me-4">
+            <img src="icons/email.png" width="30" alt="Email">
+            <span class="fs-5">lorenipsum@gmail.com</span>
+        </div>
+        <div>
+            <img src="icons/phone.png" width="30" alt="Phone">
+            <span class="fs-5">415xxxxxxx</span>
+        </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="row justify-content-center mt-4">
+        <!-- LinkedIn -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <a href="https://linkedin.com/" target="_blank" class="contact-icon">
+                <img src="icons/linkedin.png" class="rounded-circle" width="80" alt="LinkedIn">
+                <p class="mt-2">LinkedIn</p>
+            </a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <a href="https://github.com/" target="_blank" class="contact-icon">
+                <img src="icons/github.png" class="rounded-circle" width="80" alt="GitHub">
+                <p class="mt-2">GitHub</p>
+            </a>
+        </div>
+
+        <!-- Medium -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <a href="https://medium.com/" target="_blank" class="contact-icon">
+                <img src="icons/medium.png" class="rounded-circle" width="80" alt="Medium">
+                <p class="mt-2">Medium</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Contact Section Styling */
+    .contact-icon {
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+    .contact-icon img {
+        background-color: #e91e63; /* Pink background for icons */
+        padding: 10px;
+    }
+</style>

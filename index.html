@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navya's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Minimal Pastels Color Scheme */
+        :root {
+            --sage-green: #98AE9B;
+            --soft-green: #B4C0AD;
+            --white: #FEFEFE;
+            --soft-blue: #B9C7DC;
+            --warm-beige: #EEE7C3;
+            --text-dark: #3D3B40;
+            --text-light: #5A5A42;
+            --button-green: #8FAE96;
+            --button-dark: #5D5C61;
+            --button-medium: #A3A1A1;
+            --button-medium-text: #FFFFFF;
+            --link-color: #98AE9B;
+            --link-hover: #B4C0AD;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--white);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        .navbar {
+            background-color: var(--sage-green) !important;
+            transition: background 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            font-weight: 500;
+        }
+
+        .hero {
+            background: linear-gradient(to right, var(--soft-green), var(--soft-blue));
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .section {
+            padding: 80px 20px;
+        }
+
+        .bg-light {
+            background-color: var(--warm-beige) !important;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+            border: 4px solid var(--sage-green);
+        }
+
+        .contact-icons img {
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            background-color: transparent;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 5px;
+        }
+
+        .contact-icons a {
+            color: var(--link-color);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contact-icons a:hover {
+            color: var(--link-hover);
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            display: block;
+            margin: auto;
+        }
+
+        .btn-primary {
+            background-color: var(--button-green) !important;
+            border: none;
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--soft-green) !important;
+        }
+
+        .btn-dark {
+            background-color: var(--button-dark) !important;
+            border: none;
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .btn-dark:hover {
+            background-color: var(--text-dark) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navya's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Navya Bulusu</h1>
+            <p>Data Scientist | Business Intelligence Analyst | Mental Health Enthusiast</p>
+        </div>
+    </header>
+
+    <section id="about" class="section text-center">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="/Users/navya/Desktop/Data Science Portfolio/Images/About/1.jpg" alt="Navya's Profile Picture" class="profile-img">
+            <p>
+                I am Navya, a passionate Data Scientist with 5 years of experience turning complex data into meaningful insights. With a Master's in Business Analytics from the University of Texas at Dallas, I specialize in SQL, Python, Machine Learning, AI, and am currently diving into GenAI, Tableau, Power BI, Power Query, and VBA. Having spent 3 years as a Data Scientist at Applied Materials, I’ve worked on high-impact projects that blend analytics with innovation.
+            </p>
+            <p>
+                Beyond algorithms and dashboards, I am deeply fascinated by industries like retail, fashion, skincare, mental health, pharmaceuticals (Oncology), product-based businesses, trading, finance, and e-commerce. I believe in using data as a force for good—whether it’s optimizing business strategies, decoding consumer behavior, or driving advancements in healthcare.
+            </p>
+            <p>
+                Giving back to the data community has always been close to my heart, and I strive to make the world a better place through my work. I am also passionate about social impact and open to joining an NGO to contribute toward a better future for the next generations. Let's harness the power of data to innovate, empower, and drive meaningful change!
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/Users/navya/Desktop/Data Science Portfolio/Images/Projects/1.png" class="card-img-top" alt="Anxiety Attack Data Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title">Anxiety Attack Data Analysis</h5>
+                            <a href="https://medium.com/@navyabulusu/analyzing-anxiety-attacks-a-data-science-approach-2bfd93a28474" class="btn btn-primary" target="_blank">Read on Medium</a>
+                            <a href="https://github.com/navyaa97/AnxietyAttackDA" class="btn btn-dark" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container text-center">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div><img src="/Users/navya/Desktop/Data Science Portfolio/Images/Skills/1.png" class="skill-icon"><p>Python</p></div>
+                <div><img src="/Users/navya/Desktop/Data Science Portfolio/Images/Skills/6.png" class="skill-icon"><p>Machine Learning</p></div>
+                <div><img src="/Users/navya/Desktop/Data Science Portfolio/Images/Skills/3.png" class="skill-icon"><p>SQL</p></div>
+                <div><img src="/Users/navya/Desktop/Data Science Portfolio/Images/Skills/2.png" class="skill-icon"><p>Data Visualization</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section bg-light">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out through any of the following platforms:</p>
+            <div class="contact-icons">
+                <a href="mailto:navyabulusu@gmail.com"><img src="/Users/navya/Desktop/Data Science Portfolio/Icons/email.png"> Email</a>
+                <a href="tel:+1(469)939-9096"><img src="/Users/navya/Desktop/Data Science Portfolio/Icons/Phone.png"> Phone</a>
+                <a href="https://medium.com/@navyabulusu" target="_blank"><img src="/Users/navya/Desktop/Data Science Portfolio/Icons/medium.png"> Medium</a>
+                <a href="https://github.com/navyaa97" target="_blank"><img src="/Users/navya/Desktop/Data Science Portfolio/Icons/github.png"> GitHub</a>
+                <a href="https://linkedin.com/in/navyabulusu" target="_blank"><img src="/Users/navya/Desktop/Data Science Portfolio/Icons/linkedin.png"> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
