@@ -304,46 +304,46 @@
 </html>
 
 <section id="blogs" class="section bg-light">
-    <div class="container">
-        <h2 class="text-center">Latest Blogs</h2>
-        <div class="row" id="blog-list">
-            <!-- Blogs will be loaded dynamically here -->
+        <div class="container">
+            <h2 class="text-center">Latest Blogs</h2>
+            <div class="row" id="blog-list">
+                <!-- Blogs will be loaded dynamically here -->
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<script>
-    async function fetchMediumPosts() {
-        const rssUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@navyabulusu";
-        const response = await fetch(rssUrl);
-        const data = await response.json();
-        const blogList = document.getElementById("blog-list");
-        
-        if (data.items) {
-            data.items.slice(0, 3).forEach(post => {
-                const blogCard = document.createElement("div");
-                blogCard.className = "col-md-4 d-flex";
-                
-                // Extract first image from post content
-                const tempDiv = document.createElement("div");
-                tempDiv.innerHTML = post.content;
-                const firstImage = tempDiv.querySelector("img") ? tempDiv.querySelector("img").src : "Images/Blogs/default.jpg";
-                
-                blogCard.innerHTML = `
-                    <div class="card blog-card">
-                        <img src="${firstImage}" class="card-img-top" alt="Blog Image">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">${post.title}</h5>
-                            <a href="${post.link}" class="btn btn-custom" target="_blank">Read More</a>
+    <script>
+        async function fetchMediumPosts() {
+            const rssUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@navyabulusu";
+            const response = await fetch(rssUrl);
+            const data = await response.json();
+            const blogList = document.getElementById("blog-list");
+            
+            if (data.items) {
+                data.items.slice(0, 3).forEach(post => {
+                    const blogCard = document.createElement("div");
+                    blogCard.className = "col-md-4 d-flex";
+                    
+                    // Extract first image from post content
+                    const tempDiv = document.createElement("div");
+                    tempDiv.innerHTML = post.content;
+                    const firstImage = tempDiv.querySelector("img") ? tempDiv.querySelector("img").src : "Images/Blogs/default.jpg";
+                    
+                    blogCard.innerHTML = `
+                        <div class="card blog-card">
+                            <img src="${firstImage}" class="card-img-top" alt="Blog Image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">${post.title}</h5>
+                                <a href="${post.link}" class="btn btn-custom" target="_blank">Read More</a>
+                            </div>
                         </div>
-                    </div>
-                `;
-                blogList.appendChild(blogCard);
-            });
+                    `;
+                    blogList.appendChild(blogCard);
+                });
+            }
         }
-    }
-    fetchMediumPosts();
-</script>
+        fetchMediumPosts();
+    </script>
 </body>
 </html>
    
